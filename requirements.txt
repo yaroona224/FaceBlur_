@@ -1,16 +1,13 @@
 flask==3.0.3
 gunicorn==21.2.0
 
-# NumPy: 1.26.x for Py<3.13, 2.x for Py>=3.13
-numpy==1.26.4 ; python_version < "3.13"
-numpy>=2.0.0  ; python_version >= "3.13"
+# Numpy/Pillow for Py3.13
+numpy>=2.0.0
+pillow>=11.0.0
 
 opencv-python-headless==4.10.0.84
 
-# Ultralytics + Torch (works on Render CPU with modern Python)
+# YOLO + matching Torch stack for Python 3.13 (CPU)
 ultralytics==8.3.194
-torch==2.5.1
-
-# Imaging
-pillow==10.4.0 ; python_version < "3.13"
-pillow>=11.0.0 ; python_version >= "3.13"
+torch==2.8.0
+torchvision==0.23.0
