@@ -1,13 +1,14 @@
 flask==3.0.3
-gunicorn==21.2.0
+gunicorn==22.0.0
 
-# Numpy/Pillow for Py3.13
-numpy>=2.0.0
-pillow>=11.0.0
-
-opencv-python-headless==4.10.0.84
-
-# YOLO + matching Torch stack for Python 3.13 (CPU)
+# Core deps
+numpy==2.3.2
+opencv-contrib-python-headless==4.10.0.84
 ultralytics==8.3.194
-torch==2.8.0
-torchvision==0.23.0
+torch==2.5.1 ; platform_system=="Linux" and platform_machine=="x86_64"
+
+# Small helpers Ultralytics likes
+shapely==2.0.6
+tqdm>=4.65
+pillow==10.4.0
+matplotlib>=3.7,<3.11
