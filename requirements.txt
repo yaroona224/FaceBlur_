@@ -1,18 +1,4 @@
 flask==3.0.3
-gunicorn==22.0.0
-
-# Core
-numpy==2.3.2
-opencv-contrib-python-headless==4.10.0.84
-ultralytics==8.3.194
-
-# Match Torch to TorchVision (Python 3.13 / Linux x86_64)
-torch==2.8.0 ; platform_system=="Linux" and platform_machine=="x86_64"
-torchvision==0.23.0 ; platform_system=="Linux" and platform_machine=="x86_64"
-
-# Small helpers
-shapely==2.0.6
-tqdm>=4.65
-pillow==11.0.0
-matplotlib>=3.7,<3.11
-
+ultralytics==8.2.91
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
