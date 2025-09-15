@@ -1,1 +1,1 @@
-
+web: gunicorn tryS:app
